@@ -15,6 +15,7 @@
 		53454E1620EF0F1D00B82E08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53454E1520EF0F1D00B82E08 /* main.m */; };
 		53454E2020EF0F1D00B82E08 /* YTJHKaoShiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53454E1F20EF0F1D00B82E08 /* YTJHKaoShiTests.m */; };
 		53454E2B20EF0F1E00B82E08 /* YTJHKaoShiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53454E2A20EF0F1E00B82E08 /* YTJHKaoShiUITests.m */; };
+		9DCF61B53C1E7131C3F82DD5 /* libPods-YTJHKaoShi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 006185F0700079D9774DF565 /* libPods-YTJHKaoShi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		006185F0700079D9774DF565 /* libPods-YTJHKaoShi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YTJHKaoShi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FE42CB2B1B19B27C746D91 /* Pods-YTJHKaoShi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTJHKaoShi.release.xcconfig"; path = "Pods/Target Support Files/Pods-YTJHKaoShi/Pods-YTJHKaoShi.release.xcconfig"; sourceTree = "<group>"; };
 		53454E0320EF0F1B00B82E08 /* YTJHKaoShi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTJHKaoShi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53454E0620EF0F1B00B82E08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53454E0720EF0F1B00B82E08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		53454E2620EF0F1E00B82E08 /* YTJHKaoShiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTJHKaoShiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53454E2A20EF0F1E00B82E08 /* YTJHKaoShiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTJHKaoShiUITests.m; sourceTree = "<group>"; };
 		53454E2C20EF0F1E00B82E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F413F27D0AC9F2B069C5827 /* Pods-YTJHKaoShi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTJHKaoShi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTJHKaoShi/Pods-YTJHKaoShi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCF61B53C1E7131C3F82DD5 /* libPods-YTJHKaoShi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				53454E1E20EF0F1D00B82E08 /* YTJHKaoShiTests */,
 				53454E2920EF0F1E00B82E08 /* YTJHKaoShiUITests */,
 				53454E0420EF0F1B00B82E08 /* Products */,
+				F507E4F98CE626290191808E /* Pods */,
+				5889AA5D12E8448613FE012A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = YTJHKaoShiUITests;
 			sourceTree = "<group>";
 		};
+		5889AA5D12E8448613FE012A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006185F0700079D9774DF565 /* libPods-YTJHKaoShi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F507E4F98CE626290191808E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F413F27D0AC9F2B069C5827 /* Pods-YTJHKaoShi.debug.xcconfig */,
+				49FE42CB2B1B19B27C746D91 /* Pods-YTJHKaoShi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53454E2F20EF0F1E00B82E08 /* Build configuration list for PBXNativeTarget "YTJHKaoShi" */;
 			buildPhases = (
+				7825037CADBF3BA6D801F461 /* [CP] Check Pods Manifest.lock */,
 				53454DFF20EF0F1B00B82E08 /* Sources */,
 				53454E0020EF0F1B00B82E08 /* Frameworks */,
 				53454E0120EF0F1B00B82E08 /* Resources */,
@@ -256,6 +281,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7825037CADBF3BA6D801F461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YTJHKaoShi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53454DFF20EF0F1B00B82E08 /* Sources */ = {
@@ -431,6 +477,7 @@
 		};
 		53454E3020EF0F1E00B82E08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F413F27D0AC9F2B069C5827 /* Pods-YTJHKaoShi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +495,7 @@
 		};
 		53454E3120EF0F1E00B82E08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49FE42CB2B1B19B27C746D91 /* Pods-YTJHKaoShi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
